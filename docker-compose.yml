@@ -975,7 +975,8 @@ services:
         - MEMORY_LIMIT=${PMA_MEMORY_LIMIT}
         - UPLOAD_LIMIT=${PMA_UPLOAD_LIMIT}
       ports:
-        - "${PMA_PORT}:80"
+        
+        - "8001:80"
       depends_on:
         - "${PMA_DB_ENGINE}"
       networks:
